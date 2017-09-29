@@ -1,0 +1,26 @@
+[package]
+name = "ecs"
+version = "0.1.0"
+authors = ["Owen Glofcheski <owen.glofcheski@gmail.com>"]
+
+[dependencies]
+cgmath = "0.14.1"
+gl = "*"
+glutin = "0.9.2"
+image = "0.14.0"
+libc = "*"
+notify = "4.0.0"
+
+[profile.dev]
+codegen-units = 1
+debug = true
+debug-assertions = true
+lto = false
+opt-level = 0
+
+[profile.release]
+codegen-units = 1
+debug = false
+debug-assertions = false
+lto = false
+opt-level = 3
